@@ -239,7 +239,7 @@ body {
   margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .container {
     position: relative;
   }
@@ -250,9 +250,22 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .card-wrapper {
+    top: 20em;
+    right: 10em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-wrapper {
+    right: 48em;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .card-wrapper {
     position: absolute;
-    left: 75rem;
+    left: 73rem;
   }
 }
