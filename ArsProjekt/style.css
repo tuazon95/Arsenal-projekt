@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #262626;
+  display: grid;
+  place-items: center;
+}
+
+.card-wrapper {
+  width: 50rem;
+  height: 70rem;
+  padding: 0 10rem;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.card-top {
+  width: 100%;
+  height: 50%;
+  background: rgb(220, 59, 59);
+  padding: 3rem;
+  border-radius: 2.5rem 2.5rem 0 0;
+  transition: background 0.5s;
+}
+
+.card {
+  width: 30rem;
+  height: 55rem;
+  background: #eee;
+  border-radius: 2.5rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.container.black .card-top {
+  background: rgb(165, 143, 16);
+}
+
+.container.pink .card-top {
+  background: #df9faa;
+}
+
+.container.pink .price {
+  background: #df9faa;
+}
+
+.container.black .price {
+  background: rgb(165, 143, 16);
+}
+
+.logo {
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.top-text {
+  color: white;
+}
+
+.top-text h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.kit1 {
+  width: 30rem;
+  position: absolute;
+  top: -1.5rem;
+  right: -7rem;
+  transition: transform 1s;
+}
+
+.container.black .kit1 {
+  transform: translateX(-50rem);
+}
+
+.container.black .kit2 {
+  transform: translateX(-30rem);
+}
+
+.container.pink .kit3 {
+  transform: translateX(-30rem);
+}
+
+.container.pink .kit1 {
+  transform: translateX(-50rem);
+}
+
+.kit2 {
+  width: 30rem;
+  position: absolute;
+  top: -1.5rem;
+  right: -37rem;
+  transition: transform 1s;
+}
+
+.kit3 {
+  width: 30rem;
+  position: absolute;
+  top: -1.5rem;
+  right: -37rem;
+  transition: transform 1s;
+}
+
+.card-bottom {
+  width: 100%;
+  height: 50%;
+  padding: 2rem 3rem;
+}
+
+.card-bottom h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #333;
+  margin-bottom: 0.6rem;
+}
+
+.card-bottom h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.stars {
+  margin-bottom: 3rem;
+}
+
+.stars i:last-child {
+  opacity: 0.4;
+}
+
+.size {
+  margin-bottom: 3rem;
+}
+
+.size h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.3rem;
+}
+
+.sizes {
+  display: flex;
+}
+
+.sizes span {
+  font-size: 1.3rem;
+  margin-right: 2.5rem;
+}
+
+.sizes span:nth-child(3) {
+  width: 2rem;
+  height: 2rem;
+  background: #25d393;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.colors h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.colors {
+  display: flex;
+}
+
+.color1,
+.color2,
+.color3 {
+  width: 2rem;
+  height: 2rem;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color1 {
+  background: red;
+  margin-right: 1.5rem;
+}
+
+.color2 {
+  background: black;
+  margin-right: 1.5rem;
+}
+
+.color3 {
+  background: pink;
+}
+
+.price {
+  width: 16rem;
+  height: 4rem;
+  background: red;
+  color: white;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: -1rem;
+  bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: background 0.5s;
+}
+
+.price span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.price span:nth-child(1) {
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    position: relative;
+  }
+
+  .card-wrapper {
+    position: absolute;
+    right: -6em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-wrapper {
+    top: 20em;
+    right: 10em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card-wrapper {
+    top: 35em;
+    right: 24em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-wrapper {
+    top: 10em;
+    right: 45em;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .card-wrapper {
+    position: absolute;
+    left: 73rem;
+    top: 15em;
+  }
+}
